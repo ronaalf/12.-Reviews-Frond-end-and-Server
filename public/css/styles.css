@@ -1,0 +1,110 @@
+:root {
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-5: hsl(205, 78%, 60%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(229, 236, 241, 0.726);
+}
+
+.container{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 50px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 26, 49);
+}
+
+.title h1 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.underline{
+    border-bottom: 3px solid rgb(2, 137, 255);
+    width: 35%;
+    margin: 11px auto 40px;
+    border-radius: 5px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px  10px -7px black;
+    padding: 10px 20px 30px;
+    border-radius: 10px;
+}
+
+#person-img {
+    border-radius: 100px;
+    width: 200px;
+    transform:scale(0.8);
+    box-shadow: 15px -7px 0px rgb(84, 175, 255);
+    object-fit: cover;
+}
+
+#author {
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+#job {
+    text-transform: uppercase;
+    color:  rgb(31, 150, 253);
+    margin: 7px 0 15px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+#info {
+    font-size: 15px;
+    color: rgb(96, 108, 121);
+    margin-bottom: 7px;
+}
+
+.prev-btn,
+.next-btn {
+    color: var(--clr-primary-7);
+    font-size: 1.50rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: var(--clr-primary-5);
+}
+
+.random-btn {
+    margin-top: 0.5rem;
+    background: var(--clr-primary-10);
+    color: var(--clr-primary-5);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    border-color: var(--clr-primary-5);
+    cursor: pointer;
+}
+.random-btn:hover {
+    background: var(--clr-primary-5);
+    color: var(--clr-primary-1);
+}
